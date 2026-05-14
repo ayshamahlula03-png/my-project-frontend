@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 
-const API = 'http://localhost:5000'
+const API = 'https://my-project-backend-x69d.onrender.com'
 
 const statusStyle = {
   'Pending':     { bg: '#fffbeb', text: '#b45309', dot: '#f59e0b' },
