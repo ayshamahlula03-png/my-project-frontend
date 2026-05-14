@@ -105,7 +105,6 @@ export default function DesignerDashboard() {
   const { user, logout } = useAuth()
 
   const [serverToday, setServerToday]       = useState('')
-  const [serverTomorrow, setServerTomorrow] = useState('')
   const [showTomorrow, setShowTomorrow]     = useState(false)
 
   const [tasks, setTasks]                   = useState([])

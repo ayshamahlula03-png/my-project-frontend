@@ -3,7 +3,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { getPlannerTasks, uploadFileToDrive } from '../services/api'
 
 const API = 'https://my-project-backend-x69d.onrender.com'
-
+const style = statusStyle[task.status];
 const statusStyle = {
   'Pending':     { bg: '#fffbeb', text: '#b45309', dot: '#f59e0b' },
   'Assigned':    { bg: '#eff6ff', text: '#1d4ed8', dot: '#3b82f6' },
