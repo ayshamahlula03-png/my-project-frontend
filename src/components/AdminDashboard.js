@@ -301,12 +301,12 @@ export default function AdminDashboard() {
     .page-title { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 700; color: #1e293b; margin-bottom: 4px; }
     .page-sub { font-size: 13px; color: #94a3b8; margin-bottom: 24px; }
     .stats-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-bottom: 24px; }
-    .stat-card { background: #fff; border-radius: 16px; padding: 18px 16px; border: 1px solid #e8edf4; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .stat-card { background: #fff; border-radius: 16px; padding: 18px 16px; border: 2px solid #86efac; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(5,150,105,0.07); }
     .stat-label { font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px; }
     .stat-value { font-size: 28px; font-weight: 800; line-height: 1; }
     .stat-icon { width: 42px; height: 42px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
     .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
-    .card { background: #fff; border-radius: 18px; border: 1px solid #e8edf4; overflow: hidden; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .card { background: #fff; border-radius: 18px; border: 2px solid #86efac; overflow: hidden; margin-bottom: 20px; box-shadow: 0 2px 16px rgba(5,150,105,0.08); }
     .card-header { padding: 18px 24px; border-bottom: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; }
     .card-title { font-size: 15px; font-weight: 700; color: #1e293b; }
     .card-sub { font-size: 12px; color: #94a3b8; margin-top: 2px; }
@@ -314,10 +314,10 @@ export default function AdminDashboard() {
     .tabs { display: flex; gap: 4px; background: #f1f5f9; border-radius: 12px; padding: 4px; margin-bottom: 20px; flex-wrap: wrap; }
     .tab-btn { flex: 1; padding: 10px 14px; border-radius: 9px; border: none; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; color: #64748b; background: transparent; transition: all 0.15s; white-space: nowrap; }
     .tab-btn.active { background: #fff; color: #7c3aed; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .search-bar { width: 100%; padding: 10px 14px 10px 40px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 13px; font-family: inherit; font-weight: 500; color: #1e293b; background: #f8fafc; outline: none; }
-    .search-bar:focus { border-color: #7c3aed; background: #fff; }
-    .filter-select { padding: 9px 12px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 13px; font-family: inherit; font-weight: 600; color: #374151; background: #f8fafc; outline: none; cursor: pointer; }
-    .filter-select:focus { border-color: #7c3aed; }
+    .search-bar { width: 100%; padding: 10px 14px 10px 40px; border: 2px solid #86efac; border-radius: 10px; font-size: 13px; font-family: inherit; font-weight: 500; color: #1e293b; background: #f8fafc; outline: none; }
+    .search-bar:focus { border-color: #059669; background: #fff; box-shadow: 0 0 0 3px rgba(5,150,105,0.10); }
+    .filter-select { padding: 9px 12px; border: 2px solid #86efac; border-radius: 10px; font-size: 13px; font-family: inherit; font-weight: 600; color: #374151; background: #f8fafc; outline: none; cursor: pointer; }
+    .filter-select:focus { border-color: #059669; }
     .btn-refresh { padding: 9px 18px; border-radius: 10px; border: none; background: linear-gradient(135deg, #059669, #047857); color: #fff; font-size: 13px; font-weight: 700; cursor: pointer; font-family: inherit; }
     table { width: 100%; border-collapse: collapse; }
     thead th { padding: 11px 14px; text-align: left; font-size: 11px; font-weight: 800; color: #94a3b8; letter-spacing: 0.7px; text-transform: uppercase; background: #f8fafc; border-bottom: 1px solid #e8edf4; }
@@ -370,7 +370,7 @@ export default function AdminDashboard() {
     .empty-state { text-align: center; padding: 48px 24px; }
     .empty-icon { font-size: 42px; margin-bottom: 12px; }
     .empty-text { font-size: 14px; color: #94a3b8; font-weight: 500; }
-    .my-leave-card { background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .my-leave-card { background: #f8fafc; border: 2px solid #86efac; border-radius: 14px; padding: 14px 18px; margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
     .my-leave-card.today { background: #fef9c3; border-color: #fde68a; }
     .btn-remove-leave { padding: 7px 14px; border-radius: 8px; border: 1.5px solid #fecaca; background: #fff; color: #dc2626; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; display: inline-flex; align-items: center; gap: 5px; }
     .btn-remove-leave:disabled { opacity: 0.5; cursor: not-allowed; }
@@ -795,7 +795,7 @@ export default function AdminDashboard() {
               </div>
 
               {/* Mark leave form */}
-              <div style={{ background: '#f8fafc', border: '1.5px solid #e2e8f0', borderRadius: 14, padding: 20, marginBottom: 24 }}>
+              <div style={{ background: '#f8fafc', border: '2px solid #86efac', borderRadius: 14, padding: 20, marginBottom: 24 }}>
                 <div style={{ fontSize: 13, fontWeight: 800, color: '#1e293b', marginBottom: 14 }}>➕ Mark a Leave Day</div>
                 <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', alignItems: 'flex-end' }}>
                   <div style={{ flex: '0 0 200px' }}>

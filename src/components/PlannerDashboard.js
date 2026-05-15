@@ -338,8 +338,8 @@ export default function PlannerDashboard() {
       background: #fff;
       border-radius: 20px;
       padding: 22px 24px;
-      border: 1px solid #e8edf4;
-      box-shadow: 0 2px 12px rgba(37,99,235,0.06);
+      border: 2px solid #86efac;
+      box-shadow: 0 2px 16px rgba(5,150,105,0.08);
       cursor: pointer;
       position: relative;
       overflow: hidden;
@@ -347,8 +347,8 @@ export default function PlannerDashboard() {
     }
     .review-work-card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 8px 28px rgba(37,99,235,0.13);
-      border-color: #bfdbfe;
+      box-shadow: 0 8px 28px rgba(5,150,105,0.15);
+      border-color: #4ade80;
     }
     .review-work-card::before {
       content: '';
@@ -407,14 +407,14 @@ export default function PlannerDashboard() {
       padding-top: 14px; border-top: 1px solid #f1f5f9;
     }
 
-    .total-card { background: #fff; border-radius: 20px; padding: 22px; border: 1px solid #e8edf4; box-shadow: 0 2px 8px rgba(0,0,0,0.03); display: flex; flex-direction: column; justify-content: center; }
+    .total-card { background: #fff; border-radius: 20px; padding: 22px; border: 2px solid #86efac; box-shadow: 0 2px 16px rgba(5,150,105,0.08); display: flex; flex-direction: column; justify-content: center; }
     .total-label { font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
     .total-value { font-family: 'Fraunces', serif; font-size: 52px; font-weight: 700; color: #7c3aed; line-height: 1; margin-bottom: 6px; }
     .total-sub { font-size: 12px; color: #94a3b8; }
     .tabs { display: flex; gap: 4px; background: #f1f5f9; border-radius: 12px; padding: 4px; margin-bottom: 20px; flex-wrap: wrap; }
     .tab-btn { flex: 1; padding: 10px 12px; border-radius: 9px; border: none; font-size: 12px; font-weight: 700; cursor: pointer; font-family: inherit; transition: all 0.15s; color: #64748b; background: transparent; white-space: nowrap; }
     .tab-btn.active { background: #fff; color: #2563eb; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .card { background: #fff; border-radius: 18px; border: 1px solid #e8edf4; margin-bottom: 20px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .card { background: #fff; border-radius: 18px; border: 2px solid #86efac; margin-bottom: 20px; overflow: hidden; box-shadow: 0 2px 16px rgba(5,150,105,0.08); }
     .card-header { padding: 18px 24px; border-bottom: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; }
     .card-title { font-size: 15px; font-weight: 700; color: #1e293b; }
     .card-sub { font-size: 12px; color: #94a3b8; margin-top: 2px; }
@@ -486,13 +486,13 @@ export default function PlannerDashboard() {
     .leave-tab-badge { background: #ef4444; color: #fff; border-radius: 10px; padding: 1px 7px; font-size: 10px; margin-left: 4px; font-weight: 800; }
     .cascade-info { background: #eff6ff; border: 1.5px solid #bfdbfe; border-radius: 12px; padding: 12px 16px; margin-bottom: 20px; font-size: 12px; color: #1d4ed8; font-weight: 600; line-height: 1.7; }
     .my-leave-section { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-    .my-leave-form { background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 20px; }
-    .my-leave-history { background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 20px; }
+    .my-leave-form { background: #f8fafc; border: 2px solid #86efac; border-radius: 16px; padding: 20px; }
+    .my-leave-history { background: #f8fafc; border: 2px solid #86efac; border-radius: 16px; padding: 20px; }
     .form-label { font-size: 11px; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 6px; }
-    .form-input { width: 100%; padding: 10px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 13px; font-family: inherit; font-weight: 500; color: #1e293b; background: #fff; outline: none; margin-bottom: 12px; }
-    .form-input:focus { border-color: #2563eb; }
-    .form-textarea { width: 100%; padding: 10px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 13px; font-family: inherit; font-weight: 500; color: #1e293b; background: #fff; outline: none; resize: vertical; min-height: 72px; margin-bottom: 12px; }
-    .form-textarea:focus { border-color: #2563eb; }
+    .form-input { width: 100%; padding: 10px 14px; border: 2px solid #86efac; border-radius: 10px; font-size: 13px; font-family: inherit; font-weight: 500; color: #1e293b; background: #fff; outline: none; margin-bottom: 12px; }
+    .form-input:focus { border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,0.10); }
+    .form-textarea { width: 100%; padding: 10px 14px; border: 2px solid #86efac; border-radius: 10px; font-size: 13px; font-family: inherit; font-weight: 500; color: #1e293b; background: #fff; outline: none; resize: vertical; min-height: 72px; margin-bottom: 12px; }
+    .form-textarea:focus { border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,0.10); }
     .btn-submit-leave { width: 100%; padding: 12px; border-radius: 10px; border: none; background: linear-gradient(135deg, #2563eb, #7c3aed); color: #fff; font-size: 14px; font-weight: 800; cursor: pointer; font-family: inherit; display: flex; align-items: center; justify-content: center; gap: 8px; }
     .btn-submit-leave:disabled { opacity: 0.5; cursor: not-allowed; }
     .today-status-banner { border-radius: 12px; padding: 12px 16px; margin-bottom: 16px; font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 8px; }

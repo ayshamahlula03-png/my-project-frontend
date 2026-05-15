@@ -291,7 +291,7 @@ export default function DesignerDashboard() {
   }
 
   const handleProgressUpload = async () => {
-    if (!progressFile) { setProgressResult({ success: false, error: 'Please select a screenshot' }); return }
+    if (!progressFile) { setProgressResult({ success: false, error: '📂 No file chosen — please select a screenshot first' }); return }
     setProgressUploading(true)
     setProgressResult(null)
     try {
@@ -388,21 +388,21 @@ const shouldFlicker = currentSlot && !uploadedCurrentSlot
     .page-title { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 700; color: #1e293b; margin-bottom: 4px; }
     .page-sub { font-size: 13px; color: #94a3b8; margin-bottom: 24px; }
     .stats-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; margin-bottom: 24px; }
-    .stat-card { background: #fff; border-radius: 16px; padding: 18px 12px; border: 1px solid #e8edf4; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .stat-card { background: #fff; border-radius: 16px; padding: 18px 12px; border: 2px solid #86efac; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 10px rgba(5,150,105,0.07); }
     .stat-label { font-size: 10px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px; }
     .stat-value { font-size: 24px; font-weight: 800; line-height: 1; }
     .stat-icon { width: 36px; height: 36px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 16px; }
 
     /* ★ Progress upload card — white card, matches dashboard style */
-    .progress-upload-card { background: #fff; border-radius: 18px; padding: 22px 28px; margin-bottom: 24px; border: 1px solid #e8edf4; box-shadow: 0 2px 8px rgba(0,0,0,0.03); }
+    .progress-upload-card { background: #fff; border-radius: 18px; padding: 22px 28px; margin-bottom: 24px; border: 2px solid #86efac; box-shadow: 0 2px 16px rgba(5,150,105,0.08); }
     .upload-reminder { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; }
     .reminder-icon { width: 44px; height: 44px; border-radius: 14px; background: #fff7ed; border: 1.5px solid #fed7aa; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
     .reminder-text { flex: 1; }
     .reminder-title { font-size: 15px; font-weight: 800; color: #1e293b; margin-bottom: 3px; }
     .reminder-sub { font-size: 12px; color: #94a3b8; }
     .blink-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #f59e0b; margin-right: 6px; animation: blink 1.5s ease-in-out infinite; }
-    .progress-upload-zone { border: 2px dashed #e2e8f0; border-radius: 14px; padding: 20px; background: #f8fafc; cursor: pointer; position: relative; transition: all 0.2s; display: flex; align-items: center; gap: 16px;}
-    .progress-upload-zone:hover, .progress-upload-zone.drag { border-color: #059669; background: #f0fdf4; animation: none; box-shadow: none; }
+    .progress-upload-zone { border: 2px dashed #059669; border-radius: 14px; padding: 20px; background: #f0fdf4; cursor: pointer; position: relative; transition: all 0.2s; display: flex; align-items: center; gap: 16px;}
+    .progress-upload-zone:hover, .progress-upload-zone.drag { border-color: #047857; background: #dcfce7; animation: none; box-shadow: none; }
     .flicker-active {animation: flicker 2s ease-in-out infinite;}
     .progress-upload-input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
     .progress-file-chosen { display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #f0fdf4; border-radius: 12px; border: 1.5px solid #86efac; }
@@ -411,9 +411,9 @@ const shouldFlicker = currentSlot && !uploadedCurrentSlot
     .my-upload-thumb-wrap { position: relative; width: 64px; height: 64px; flex-shrink: 0; }
     .my-upload-thumb-x { position: absolute; top: -6px; left: -6px; z-index: 10; width: 20px; height: 20px; border-radius: 50%; background: #ef4444; color: #fff; font-size: 11px; font-weight: 900; display: flex; align-items: center; justify-content: center; cursor: pointer; border: 2px solid #fff; box-shadow: 0 1px 4px rgba(0,0,0,0.2); transition: all 0.15s; line-height: 1; }
     .my-upload-thumb-x:hover { background: #dc2626; transform: scale(1.1); }
-    .progress-note-input { width: 100%; padding: 10px 14px; border: 1.5px solid #e2e8f0; border-radius: 10px; font-size: 13px; font-family: inherit; background: #fff; color: #1e293b; outline: none; margin-top: 12px; }
+    .progress-note-input { width: 100%; padding: 11px 14px; border: 2px solid #86efac; border-radius: 10px; font-size: 13px; font-family: inherit; background: #fff; color: #1e293b; outline: none; margin-top: 12px; }
     .progress-note-input::placeholder { color: #94a3b8; }
-    .progress-note-input:focus { border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,0.08); }
+    .progress-note-input:focus { border-color: #059669; box-shadow: 0 0 0 3px rgba(5,150,105,0.10); }
     .btn-send-progress { margin-top: 12px; width: 100%; padding: 12px; border-radius: 12px; border: none; background: linear-gradient(135deg, #059669, #047857); color: #fff; font-size: 14px; font-weight: 800; cursor: pointer; font-family: inherit; display: flex; align-items: center; justify-content: center; gap: 8px; transition: all 0.2s; }
     .btn-send-progress:hover:not(:disabled) { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(5,150,105,0.28); }
     .btn-send-progress:disabled { opacity: 0.45; cursor: not-allowed; }
@@ -425,7 +425,7 @@ const shouldFlicker = currentSlot && !uploadedCurrentSlot
     .my-upload-thumb img { width: 100%; height: 100%; object-fit: cover; }
     .my-upload-thumb .upload-time { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.6); color: #fff; font-size: 8px; font-weight: 700; text-align: center; padding: 2px; }
 
-    .card { background: #fff; border-radius: 18px; border: 1px solid #e8edf4; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.03); margin-bottom: 20px; }
+    .card { background: #fff; border-radius: 18px; border: 2px solid #86efac; overflow: hidden; box-shadow: 0 2px 16px rgba(5,150,105,0.08); margin-bottom: 20px; }
     .card-header { padding: 18px 24px; border-bottom: 1px solid #f1f5f9; display: flex; align-items: center; justify-content: space-between; }
     .card-title { font-size: 15px; font-weight: 700; color: #1e293b; }
     .card-sub { font-size: 12px; color: #94a3b8; margin-top: 2px; }
@@ -606,7 +606,7 @@ const shouldFlicker = currentSlot && !uploadedCurrentSlot
           />
 
           {/* Send button */}
-          <button className="btn-send-progress" onClick={handleProgressUpload} disabled={progressUploading || !progressFile}>
+          <button className="btn-send-progress" onClick={handleProgressUpload} disabled={progressUploading}>
             {progressUploading ? <><Spinner size={14}/> Sending to planner…</> : '📤 Send Progress to Planner →'}
           </button>
 
@@ -677,7 +677,7 @@ const shouldFlicker = currentSlot && !uploadedCurrentSlot
               <div className="card-title">📋 Today's Tasks — {serverToday}</div>
               <div className="card-sub">▶ Start → 📤 Submit → Admin reviews → ✅ Done</div>
             </div>
-            <button className="btn-refresh" onClick={loadTasks}>↻ Refresh</button>
+            <button className="btn-refresh" style={{display:'none'}} onClick={loadTasks}>↻ Refresh</button>
           </div>
 
           {loading
